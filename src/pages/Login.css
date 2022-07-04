@@ -1,0 +1,106 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/TriviaLogin.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.form-card {
+  /* width: 25.0625em; */
+  /* height: 32em; */
+  width: 25.0625vw;
+  height: 32vw;
+  margin-left: 6.5625vw;
+  background: rgba(1, 6, 37, 0.65);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875vw;
+  width: 16.97vw;
+}
+
+.form input {
+  height: 3em;
+  border: none;
+  border-bottom: 1px solid #F6F5FC;
+  background-color: inherit;
+  color: #F6F5FC;
+  font-size: 1vw;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.7s ease;
+}
+
+.form input:focus {
+  border-bottom: 1px solid #FE75FE;
+}
+
+.form input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #F6F5FC !important;
+}
+
+.form input::placeholder {
+  color: #F6F5FC;
+}
+
+.login-button {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 1.5625vw;
+  margin-bottom: 0.9375vw;
+  padding: 5px 0;
+  color: #53E9F4;
+  outline: none;
+  background-color: rgba(19, 19, 19, 0.4);
+  cursor: pointer;
+  animation: flash 3s linear infinite;
+}
+
+.login-button:hover {
+  animation: none;
+  color: #eda1f7;
+  border: 2px solid #eda1f7;
+  text-shadow: 0 0 15px #e441fa;
+}
+
+.title {
+  width: 19.1875vw;
+  margin-top: 15px;
+}
+
+.logo {
+  width: 23vw;
+  align-self: flex-start;
+  margin-top: 6vh;
+  margin-left: 26.3vw;
+}
+
+@keyframes flash {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: rgba(1, 6, 37, 0.4);
+    border: 2px solid rgba(19, 19, 19, 0);
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #a6f2fa;
+    border: 2px solid #9CF0FA;
+    text-shadow: 0 0 15px #53E9F4;
+  }
+}

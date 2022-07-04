@@ -1,0 +1,27 @@
+.header {
+  margin: 0 auto;
+  height: 12vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(1, 6, 37, 0.75);
+  border-radius: 0 0 10px 10px;
+  color: #F6F5FC;
+  font-weight: 500;
+}
+
+.img-div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.player-img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.player-name {
+  text-transform: uppercase;
+}
