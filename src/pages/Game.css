@@ -1,44 +1,44 @@
 .game-page {
-  height: 100vh;
-  width: 100vw;
   background-image: url('../images/TriviaBackground1-blur.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main-section {
-  width: 100%;
-  height: 88vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 88vh;
+  justify-content: center;
+  width: 100%;
 }
 
 .game-section {
   background: rgba(1, 6, 37, 0.9);
-  height: 88%;
-  width: 65%;
-  padding: 15px 25px;
   border: 1px solid #9CF0FA;
   box-shadow: 3px 3px 8px #9CF0FA;
   color: #F6F5FC;
   display: flex;
   flex-direction: column;
+  height: 88%;
+  padding: 15px 25px;
+  width: 65%;
 }
 
 .timer {
-  display: flex;
   align-items: center;
-  gap: 12px;
+  display: flex;
   font-size: 2.5em;
+  gap: 12px;
 }
 
 .hourglass {
-  width: 30px;
-  color: #9CF0FA;
   animation: rotate 2s infinite ease;
+  color: #9CF0FA;
+  width: 30px;
 }
 
 .stop {
@@ -46,18 +46,18 @@
 }
 
 .game-logo {
-  max-width: 11em;
   align-self: center;
+  max-width: 11em;
 }
 
 .question-div {
-  height: 41vh;
-  margin-top: 30px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   font-weight: 600;
+  height: 41vh;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .question-text {
@@ -67,27 +67,27 @@
 }
 
 .answer-options {
-  min-height: 2.6em;
-  width: 60%;
-  padding: 0 20px;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   gap: 12px;
+  justify-content: center;
+  min-height: 2.6em;
+  padding: 0 20px;
   row-gap: 18px;
+  width: 60%;
 }
 
 .btn {
-  width: 12.5em;
-  height: 3.375em;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.9em;
-  outline: none;
   border: none;
   border-radius: 3.5px;
   color: #010625;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  height: 3.375em;
+  outline: none;
+  width: 12.5em;
 }
 
 .correct-answer {
@@ -100,16 +100,20 @@
   color: #F6F5FC;
 }
 
+.correct-answer:hover, .wrong-answer:hover {
+  color: #F6F5FC;
+}
+
 .next-btn {
-  width: 7em;
-  padding: 6px;
+  background-color: inherit;
+  border: 2px solid #9CF0FA;
+  color: #9CF0FA;
+  cursor: pointer;
   font-size: 1.1em;
   font-weight: 600;
   outline: none;
-  border: 2px solid #9CF0FA;
-  color: #9CF0FA;
-  background-color: inherit;
-  cursor: pointer;
+  padding: 6px;
+  width: 7em;
 }
 
 .next-btn:hover {
