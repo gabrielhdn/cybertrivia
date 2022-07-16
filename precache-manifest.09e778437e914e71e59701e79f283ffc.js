@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f94341026f35aed91b9be2ed4656ea15",
+    "revision": "3c50ecfdc44d2b66236329f1ea7e16e4",
     "url": "/cybertrivia/index.html"
   },
   {
-    "revision": "8fb43c3d49917af98061",
+    "revision": "20df994736c4961b9d3d",
     "url": "/cybertrivia/static/css/main.7a7a4567.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cybertrivia/static/js/2.e4ef1162.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8fb43c3d49917af98061",
-    "url": "/cybertrivia/static/js/main.d2e40da3.chunk.js"
+    "revision": "20df994736c4961b9d3d",
+    "url": "/cybertrivia/static/js/main.b11253fc.chunk.js"
   },
   {
     "revision": "4ce132e9dd8833df4b98",

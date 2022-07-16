@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cybertrivia/static/css/main.7a7a4567.chunk.css",
-    "main.js": "/cybertrivia/static/js/main.d2e40da3.chunk.js",
-    "main.js.map": "/cybertrivia/static/js/main.d2e40da3.chunk.js.map",
+    "main.js": "/cybertrivia/static/js/main.b11253fc.chunk.js",
+    "main.js.map": "/cybertrivia/static/js/main.b11253fc.chunk.js.map",
     "runtime-main.js": "/cybertrivia/static/js/runtime-main.21c2a71b.js",
     "runtime-main.js.map": "/cybertrivia/static/js/runtime-main.21c2a71b.js.map",
     "static/js/2.e4ef1162.chunk.js": "/cybertrivia/static/js/2.e4ef1162.chunk.js",
     "static/js/2.e4ef1162.chunk.js.map": "/cybertrivia/static/js/2.e4ef1162.chunk.js.map",
     "index.html": "/cybertrivia/index.html",
-    "precache-manifest.d4431e050fad2cfb5d8d3cdecc53b88a.js": "/cybertrivia/precache-manifest.d4431e050fad2cfb5d8d3cdecc53b88a.js",
+    "precache-manifest.09e778437e914e71e59701e79f283ffc.js": "/cybertrivia/precache-manifest.09e778437e914e71e59701e79f283ffc.js",
     "service-worker.js": "/cybertrivia/service-worker.js",
     "static/css/main.7a7a4567.chunk.css.map": "/cybertrivia/static/css/main.7a7a4567.chunk.css.map",
     "static/js/2.e4ef1162.chunk.js.LICENSE.txt": "/cybertrivia/static/js/2.e4ef1162.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.21c2a71b.js",
     "static/js/2.e4ef1162.chunk.js",
     "static/css/main.7a7a4567.chunk.css",
-    "static/js/main.d2e40da3.chunk.js"
+    "static/js/main.b11253fc.chunk.js"
   ]
 }
