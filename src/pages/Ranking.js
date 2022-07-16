@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { GiPodiumWinner, GiTrophy } from 'react-icons/gi';
+import { GiTrophy } from 'react-icons/gi';
 import './Ranking.css';
 
 class Ranking extends React.Component {
