@@ -206,6 +206,44 @@
   }
 }
 
+@media screen and (max-height: 620px) {
+  .timer {
+    font-size: 1.5em;
+    gap: 6px;
+  }
+
+  .hourglass {
+    font-size: 18px;
+  }
+
+  .question-text, .question-category {
+    font-size: 0.85em;
+  }
+
+  .next-btn, .btn {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .timer {
+    font-size: 1.4em;
+    gap: 5px;
+  }
+
+  .hourglass {
+    font-size: 15px;
+  }
+
+  .question-text, .question-category {
+    font-size: 0.80em;
+  }
+
+  .next-btn, .btn {
+    font-size: 0.75em;
+  }
+}
+
 @keyframes rotate {
   from {
     transform: rotateZ(0deg);
