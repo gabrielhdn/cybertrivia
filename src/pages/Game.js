@@ -143,7 +143,12 @@ class Game extends React.Component {
                 if (index === itemIndex) {
                   return (
                     <div key={ item.question } className="question-div">
-                      <p data-testid="question-category">{item.category}</p>
+                      <p
+                        data-testid="question-category"
+                        className="question-category"
+                      >
+                        {item.category}
+                      </p>
                       <p
                         data-testid="question-text"
                         className="question-text"

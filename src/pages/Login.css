@@ -90,6 +90,67 @@ input:-webkit-autofill:active {
   width: 23vw;
 }
 
+@media screen and (max-width: 1100px) {
+  .login-page {
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+
+  .form-card {
+    height: 21em;
+    width: 16em;
+    margin-left: 0;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    align-self: auto;
+    margin-left: 0;
+    width: 13em;
+  }
+
+  .form {
+    gap: 1em;
+    width: 12em;
+  }
+
+  .form input {
+    font-size: 0.9em;
+    transition: all 0.7s ease;
+  }
+
+  .title {
+    margin-top: 0;
+    width: 13.44em;
+  }
+
+  .login-button {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-page {
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .form-card {
+    height: 22em;
+    width: 17em;
+    margin-bottom: 45px;
+  }
+
+  .form {
+    margin-top: 8px;
+  }
+}
+
 @keyframes flash {
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
     border: 2px solid rgba(19, 19, 19, 0);

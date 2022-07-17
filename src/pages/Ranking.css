@@ -49,7 +49,7 @@
   width: 100%;
 }
 
-.player-img {
+.player-img-rk {
   align-self: flex-start;
   border-radius: 50%;
   width: 60px;
@@ -82,6 +82,16 @@
   background-color: #9CF0FA;
   border: 2px solid #9CF0FA;
   color: #010625;
+}
+
+@media screen and (max-width: 490px) {
+  .ranking-page {
+    gap: 28px;
+  }
+
+  .ranking-section {
+    width: 88%;
+  }
 }
 
 @keyframes animate {

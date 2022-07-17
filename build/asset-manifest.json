@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cybertrivia/static/css/main.7a7a4567.chunk.css",
+    "main.js": "/cybertrivia/static/js/main.b11253fc.chunk.js",
+    "main.js.map": "/cybertrivia/static/js/main.b11253fc.chunk.js.map",
+    "runtime-main.js": "/cybertrivia/static/js/runtime-main.21c2a71b.js",
+    "runtime-main.js.map": "/cybertrivia/static/js/runtime-main.21c2a71b.js.map",
+    "static/js/2.e4ef1162.chunk.js": "/cybertrivia/static/js/2.e4ef1162.chunk.js",
+    "static/js/2.e4ef1162.chunk.js.map": "/cybertrivia/static/js/2.e4ef1162.chunk.js.map",
+    "index.html": "/cybertrivia/index.html",
+    "precache-manifest.09e778437e914e71e59701e79f283ffc.js": "/cybertrivia/precache-manifest.09e778437e914e71e59701e79f283ffc.js",
+    "service-worker.js": "/cybertrivia/service-worker.js",
+    "static/css/main.7a7a4567.chunk.css.map": "/cybertrivia/static/css/main.7a7a4567.chunk.css.map",
+    "static/js/2.e4ef1162.chunk.js.LICENSE.txt": "/cybertrivia/static/js/2.e4ef1162.chunk.js.LICENSE.txt",
+    "static/media/CyberTrivia-cut.png": "/cybertrivia/static/media/CyberTrivia-cut.e9608543.png",
+    "static/media/Feedback.css": "/cybertrivia/static/media/TriviaBackground1-blur.dd3f8bbd.jpg",
+    "static/media/Login.css": "/cybertrivia/static/media/TriviaLogin.580b0b0c.jpg",
+    "static/media/Ranking.css": "/cybertrivia/static/media/TriviaRanking.819ed214.jpg",
+    "static/media/TriviaTitle2-ed.png": "/cybertrivia/static/media/TriviaTitle2-ed.2372ddab.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21c2a71b.js",
+    "static/js/2.e4ef1162.chunk.js",
+    "static/css/main.7a7a4567.chunk.css",
+    "static/js/main.b11253fc.chunk.js"
+  ]
+}

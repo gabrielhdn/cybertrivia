@@ -125,6 +125,87 @@
   visibility: hidden;
 }
 
+@media screen and (max-width: 1140px) {
+  .game-section {
+    width: 75%;
+  }
+
+  .game-logo {
+    max-width: 9em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .game-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .answer-options {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .answer-options {
+    width: 90%;
+  }
+
+  .question-text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .game-section {
+    padding: 15px 10px;
+  }
+
+  .game-logo {
+    display: none;
+  }
+
+  .question-div {
+    height: 65vh;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .question-category {
+    font-size: 0.9em;
+  }
+
+  .next-btn {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 0.85em;
+    height: 3.2em;
+    width: 14.5em;
+  }
+
+  .question-text {
+    font-size: 0.95em;
+  }
+
+  .timer {
+    font-size: 2em;
+    gap: 8px;
+  }
+
+  .hourglass {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .next-btn {
+    font-size: 0.9em;
+  }
+}
+
 @keyframes rotate {
   from {
     transform: rotateZ(0deg);
