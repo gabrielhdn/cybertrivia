@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cybertrivia/static/css/main.566472c6.chunk.css",
-    "main.js": "/cybertrivia/static/js/main.c8b536b7.chunk.js",
-    "main.js.map": "/cybertrivia/static/js/main.c8b536b7.chunk.js.map",
+    "main.css": "/cybertrivia/static/css/main.3b3c60ac.chunk.css",
+    "main.js": "/cybertrivia/static/js/main.7cbed271.chunk.js",
+    "main.js.map": "/cybertrivia/static/js/main.7cbed271.chunk.js.map",
     "runtime-main.js": "/cybertrivia/static/js/runtime-main.21c2a71b.js",
     "runtime-main.js.map": "/cybertrivia/static/js/runtime-main.21c2a71b.js.map",
-    "static/js/2.e4ef1162.chunk.js": "/cybertrivia/static/js/2.e4ef1162.chunk.js",
-    "static/js/2.e4ef1162.chunk.js.map": "/cybertrivia/static/js/2.e4ef1162.chunk.js.map",
+    "static/js/2.e57d819e.chunk.js": "/cybertrivia/static/js/2.e57d819e.chunk.js",
+    "static/js/2.e57d819e.chunk.js.map": "/cybertrivia/static/js/2.e57d819e.chunk.js.map",
     "index.html": "/cybertrivia/index.html",
-    "precache-manifest.c24627675d239fac33619fb986895426.js": "/cybertrivia/precache-manifest.c24627675d239fac33619fb986895426.js",
+    "precache-manifest.2797063fd672c00f230a0ae7cf7551b3.js": "/cybertrivia/precache-manifest.2797063fd672c00f230a0ae7cf7551b3.js",
     "service-worker.js": "/cybertrivia/service-worker.js",
-    "static/css/main.566472c6.chunk.css.map": "/cybertrivia/static/css/main.566472c6.chunk.css.map",
-    "static/js/2.e4ef1162.chunk.js.LICENSE.txt": "/cybertrivia/static/js/2.e4ef1162.chunk.js.LICENSE.txt",
+    "static/css/main.3b3c60ac.chunk.css.map": "/cybertrivia/static/css/main.3b3c60ac.chunk.css.map",
+    "static/js/2.e57d819e.chunk.js.LICENSE.txt": "/cybertrivia/static/js/2.e57d819e.chunk.js.LICENSE.txt",
     "static/media/CyberTrivia-cut.png": "/cybertrivia/static/media/CyberTrivia-cut.e9608543.png",
     "static/media/Feedback.css": "/cybertrivia/static/media/TriviaBackground1-blur.dd3f8bbd.jpg",
     "static/media/Login.css": "/cybertrivia/static/media/TriviaLogin.580b0b0c.jpg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.21c2a71b.js",
-    "static/js/2.e4ef1162.chunk.js",
-    "static/css/main.566472c6.chunk.css",
-    "static/js/main.c8b536b7.chunk.js"
+    "static/js/2.e57d819e.chunk.js",
+    "static/css/main.3b3c60ac.chunk.css",
+    "static/js/main.7cbed271.chunk.js"
   ]
 }
