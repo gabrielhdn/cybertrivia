@@ -1,4 +1,4 @@
-import { ADD_IMAGE_URL, SAVE_SCORE, SAVE_USER_INFO, RESET_STORE } from '../actions';
+import { ADD_IMAGE_URL, SAVE_SCORE, SAVE_USER_INFO, SAVE_SETTINGS, RESET_STORE } from '../actions';
 
 const INITIAL_STATE = {
   name: '',
@@ -6,6 +6,9 @@ const INITIAL_STATE = {
   score: 0,
   gravatarEmail: '',
   url: '',
+  category: '',
+  difficulty: '',
+  questions: 5,
 };
 
 const player = (state = INITIAL_STATE, action) => {
@@ -21,6 +24,13 @@ const player = (state = INITIAL_STATE, action) => {
       ...state,
       score: state.score + action.payload,
       assertions: state.assertions + 1,
+    };
+  case SAVE_SETTINGS:
+    return {
+      ...state,
+      category: action.payload.category,
+      difficulty: action.payload.difficulty,
+      questions: action.payload.questions,
     };
   case ADD_IMAGE_URL:
     return {

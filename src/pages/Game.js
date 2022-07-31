@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import { saveScore } from '../redux/actions';
 import logo from '../images/CyberTrivia-cut.png';
 import './Game.css';
+import { fetchQuestions } from '../services/fetchTrivia';
 
 class Game extends React.Component {
   constructor() {
@@ -28,13 +29,13 @@ class Game extends React.Component {
 
   componentDidUpdate() {
     const { timer, index } = this.state;
-    const { history, name, picture, score } = this.props;
+    const { history, name, picture, score, questionsAm } = this.props;
     const player = { name, picture, score };
-    const maxIndex = 5;
+
     if (timer === 0) {
       clearInterval(this.intervalID);
     }
-    if (index === maxIndex) {
+    if (index === +questionsAm) {
       if (!localStorage.getItem('ranking')) {
         localStorage.setItem('ranking', JSON.stringify([]));
       }
@@ -61,26 +62,25 @@ class Game extends React.Component {
     }, ONE_SECOND);
   }
 
-  fetchQuestion = () => {
+  fetchQuestion = async () => {
     const token = localStorage.getItem('token');
-    fetch(`https://opentdb.com/api.php?amount=5&token=${token}`)
-      .then((response) => response.json())
-      .then((data) => {
-        const code = 3;
-        if (data.response_code === code) {
-          const { history } = this.props;
-          localStorage.removeItem('token');
-          history.push('/');
-        }
-        const { results } = data;
-        const n = 0.5;
-        const shuffledResults = results.map((item) => ({
-          ...item,
-          shuffledQuestions: [...item.incorrect_answers, item.correct_answer]
-            .sort(() => Math.random() - n),
-        }));
-        this.setState({ results: shuffledResults });
-      });
+    const code = 3;
+    const { questionsAm, difficulty, category } = this.props;
+    const data = await fetchQuestions({ questionsAm, difficulty, category, token });
+
+    if (data.response_code === code) {
+      const { history } = this.props;
+      localStorage.removeItem('token');
+      history.push('/');
+    }
+    const { results } = data;
+    const n = 0.5;
+    const shuffledResults = results.map((item) => ({
+      ...item,
+      shuffledQuestions: [...item.incorrect_answers, item.correct_answer]
+        .sort(() => Math.random() - n),
+    }));
+    this.setState({ results: shuffledResults });
   }
 
   handleClick = (answer, dif) => {
@@ -220,6 +220,9 @@ const mapStateToProps = (state) => ({
   name: state.player.name,
   picture: state.player.url,
   score: state.player.score,
+  category: state.player.category,
+  questionsAm: state.player.questions,
+  difficulty: state.player.difficulty,
 });
 
 export default connect(mapStateToProps)(Game);

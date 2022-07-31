@@ -1,0 +1,105 @@
+.modal-overlay {
+  background: rgba(44, 44, 44, 0.8);
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  align-items: center;
+  background-color: rgba(1, 6, 37, 0.9);
+  box-shadow: 0px 0px 12px #9CF0FA;
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+  justify-content: center;
+  position: relative;
+  width: 45%;
+  height: 65%;
+}
+
+.title-div {
+  position: absolute;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container h2 {
+  color: #a6f2fa;
+}
+
+.close-button {
+  color: #a6f2fa;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: all .2s ease-in-out;
+}
+
+.close-button:hover {
+  color: #53E9F4;
+}
+
+.options-container {
+  color: #F6F5FC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 90%;
+}
+
+.options-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.options-container label select {
+  color: rgba(1, 4, 29, 0.9);
+  border: none;
+  outline: none;
+  padding-left: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.category-select {
+  width: 21.68rem;
+}
+
+@media screen and (max-width: 850px) {
+  .modal-container {
+    width: 80%;
+  }
+
+  .category-select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal-container {
+    width: 85%;
+  }
+
+  .close-button {
+    right: 10px;
+  }
+
+  option {
+    font-size: 0.75rem;
+  }
+}

@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { resetStore, saveUserInfo } from '../redux/actions';
+import { resetStore, saveSettings, saveUserInfo } from '../redux/actions';
+import { IoMdSettings } from 'react-icons/io';
 import logo from '../images/CyberTrivia-cut.png';
 import title from '../images/TriviaTitle2-ed.png';
 import './Login.css';
+import ConfigModal from '../components/ConfigModal';
 
 class Login extends React.Component {
   constructor() {
@@ -13,6 +15,10 @@ class Login extends React.Component {
     this.state = {
       name: '',
       email: '',
+      showSettings: false,
+      difficulty: '',
+      category: '',
+      questions: 5,
     };
   }
 
@@ -30,7 +36,13 @@ class Login extends React.Component {
       .then((response) => response.json())
       .then(({ token }) => {
         const { history, dispatch } = this.props;
+        const { difficulty, category, questions } = this.state;
         dispatch(saveUserInfo(this.state));
+        dispatch(saveSettings({
+          difficulty,
+          category,
+          questions
+        }));
         localStorage.setItem('token', token);
         history.push('/game');
       });
@@ -41,9 +53,12 @@ class Login extends React.Component {
     return !(name.length && email.length);
   }
 
+  toggleSettings = () => {
+    this.setState((prev) => ({ showSettings: !prev.showSettings }));
+  }
+
   render() {
-    const { email, name } = this.state;
-    // const { history } = this.props;
+    const { email, name, showSettings, difficulty, category, questions } = this.state;
     return (
       <main className="login-page">
         <section className="form-card">
@@ -78,16 +93,20 @@ class Login extends React.Component {
               >
               PLAY
             </button>
+            <IoMdSettings
+              className="settings-button"
+              onClick={ this.toggleSettings }
+            />
           </form>
         </section>
         <img src={logo} alt="CyberTrivia" className="logo"/>
-        {/* <button
-          type="button"
-          data-testid="btn-settings"
-          onClick={ () => history.push('/settings') }
-        >
-          SETTINGS
-        </button> */}
+      {showSettings && <ConfigModal
+        toggle={ this.toggleSettings }
+        change={ this.handleChange }
+        diff={ difficulty }
+        category={ category }
+        questions={ +questions }
+      />}
       </main>
     );
   }
