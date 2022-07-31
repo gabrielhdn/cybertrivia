@@ -1,6 +1,6 @@
 <p>Cyberpunk é um gênero definido pela mescla de referências do século passado com distopias tecnológicas. Daí veio a ideia do CyberTrivia, um jogo de perguntas e respostas inspirado nos visuais dos anos 80 - justamente quando os tabuleiros de trivia se popularizaram pelo mundo.</p>
 
-<p>O jogador pode selecionar configurações como quantidade de perguntas, nível de dificuldade e categorias específicas. Há ainda um sistema de rankeamento de usuários com base na velocidade em que as perguntas são respondidas corretamente.</p>
+<p>O jogador pode selecionar configurações como quantidade de perguntas, nível de dificuldade e categorias específicas. Há ainda um sistema de rankeamento de usuários com base na velocidade em que as perguntas são respondidas corretamente. O projeto foi desenvolvido com responsividade e está disponível para mobile.</p>
 
 <p>Ferramentas utilizadas:</p>
 
